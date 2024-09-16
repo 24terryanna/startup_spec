@@ -10,9 +10,9 @@ Although I’m living in Utah now, I’m an Oregonian at heart! The Pacific Nort
 + Able to save plants to “Favorites” section 
 
 ## TECHNOLOGIES
-[] HTML – two HTML pages: login and the plant gallery (allows for ability to save favorite plants) \n
-[] CSS – simple styling that uses whitespace, neutral colors, and contrast to allow readability on various screen sizes \n
-[] JavaScript – gives login page, visually appealing display, backend endpoint calls \n
-[] React – page reactive to user actions (enlarge images, scrolling through gallery) \n
-[] Web service – backend service to save plants user selects as “favorite” \n
-[] Authentication – initial input to create account and login  \n
++ HTML – two HTML pages: login and the plant gallery (allows for ability to save favorite plants) 
++ CSS – simple styling that uses whitespace, neutral colors, and contrast to allow readability on various screen sizes 
++ JavaScript – gives login page, visually appealing display, backend endpoint calls 
++ React – page reactive to user actions (enlarge images, scrolling through gallery) 
++ Web service – backend service to save plants user selects as “favorite” 
++ Authentication – initial input to create account and login
