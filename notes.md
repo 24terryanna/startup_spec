@@ -12,3 +12,30 @@ MAKE THIS HABIT
     - Repeat
 - git fetch: returns latest changes in github w/o changing repository
 - git status: see what's missing in clones -> missing commit
+
+Sept 6 – GitHub & Start-up Application 
+  - Git add (directory -> GitHub) 
+  - Git commit (GitHub -> .git) 
+  - Git checkout (.git -> directory) 
+
+  - Learn command line!!! 
+    - ls 
+    -  cd  
+    - pwd 
+    - cat  
+    - git clone url from github (clones github code into directory) 
+
+Sept 18, 2024 – HTML: Structuring Web Applications 
+  <html lang =”en”? 
+  </html> 
+  Html -> head -> title -> First HWML 
+  	->  body -> Hello world 
+  - Paragraph: <p> hello world</p> 
+  - Links: absolute & relative 
+  - div - block division of content
+  - span - inline span of content
+  - h<1-9> - text heading. 
+    
+  learn & practice languages: https://www.w3schools.com/html/default.asp
+  practice coding: codepen.io
+  
