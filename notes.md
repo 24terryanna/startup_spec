@@ -46,3 +46,13 @@ CSS & HTML
   - CSS class foo now only applies to the subcode in <p class="foo">
 - HTML & CSS work from top down
 - colors are RGB in hex values
+
+startupHtml.md:
+- 10+ commit changes
+- use "Live Server VS Code extension" to view code in browser
+- Deploy:
+  - simon deployFiles.sh (copied on 9/27 to startup_spec)
+  - use -s for service parameter:
+  ./deployFiles.sh -k <yourpemkey> -h <yourdomain> -s startup
+  example: ./deployFiles.sh -k ~/keys/production.pem -h yourdomain.click -s startup
+  **must use POSIX compliant console to run deployFiles.sh from project directory -> this deliverable = https://startup.yourdomainname
