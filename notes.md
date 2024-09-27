@@ -46,10 +46,11 @@ CSS & HTML
   - CSS class foo now only applies to the subcode in <p class="foo">
 - HTML & CSS work from top down
 - colors are RGB in hex values
-- CSS is for artist
+- CSS is for artist!
   - don't let the beautiful piece get in HTML
   - HTML is to make it work smoothly. CSS is for styling.
   - HTML = function, CSS = styling
+  - reactive behavior in CSS
 
 startupHtml.md:
 - 10+ commit changes
