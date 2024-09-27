@@ -12,3 +12,10 @@ MAKE THIS HABIT
     - Repeat
 - git fetch: returns latest changes in github w/o changing repository
 - git status: see what's missing in clones -> missing commit
+
+CSS & HTML
+- anything beginning with . (.box) creates a class
+- specification in HTML for class <p class="foo">
+  - CSS class foo now only applies to the subcode in <p class="foo">
+- HTML & CSS work from top down
+- colors are RGB in hex values
