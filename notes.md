@@ -32,7 +32,7 @@ Sept 18, 2024 – HTML: Structuring Web Applications
   	->  body -> Hello world 
   - Paragraph: <p> hello world</p> 
   - Links: absolute & relative 
-  - div - block division of content
+  - div - block division of content  
   - span - inline span of content
   - h<1-9> - text heading. 
     
