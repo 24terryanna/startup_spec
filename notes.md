@@ -61,3 +61,9 @@ startupHtml.md:
   ./deployFiles.sh -k <yourpemkey> -h <yourdomain> -s startup
   example: ./deployFiles.sh -k ~/keys/production.pem -h yourdomain.click -s startup
   **must use POSIX compliant console to run deployFiles.sh from project directory -> this deliverable = https://startup.yourdomainname
+
+pnwplantpedia notes
+- index.html
+- about.html
+- saved.html
+- pedia.html
