@@ -17,8 +17,8 @@ Although I’m living in Utah now, I’m an Oregonian at heart! The Pacific Nort
 + Web service – backend service to save plants user selects as “favorite” 
 + Authentication – initial input to create account and login
 
-pnwplantpedia notes (HTML Startup Update)
-- index.html: included the website title, menu with links to each page, a welcome header, login/create option, and my name & git hub.
-- about.html: very similar to the "About" page for Simon, this page gives a brief rundown of what PNW Plant Pedia is and how someone can benefit from using it. Currently a rough draft, will get tweeked.
-- saved.html: this page is where users will be able to access the plants they "save" aka add to their favorites. The organization of this page is still to be determined, but it will likely be a list of links to the specific plant they found on the pedia page. I need to learn more about "saving" or starring things on HTML.
-- pedia.html: the essence of the site! The page is organized into the four major groups of plants. Each of those groups then has its own table that will be filled with plant images, names, and facts. This is a rough outline of what the site will contain, but eventually it will have more of a gallery feel. For now, it has teh bare bones info and structure.
+# PNW Plant Pedia Update Notes: HTML Startup
++ index.html: included the website title, menu with links to each page, a welcome header, login/create option, and my name & git hub.
++ about.html: very similar to the "About" page for Simon, this page gives a brief rundown of what PNW Plant Pedia is and how someone can benefit from using it. Currently a rough draft, will get tweeked.
++ saved.html: this page is where users will be able to access the plants they "save" aka add to their favorites. The organization of this page is still to be determined, but it will likely be a list of links to the specific plant they found on the pedia page. I need to learn more about "saving" or starring things on HTML.
++ pedia.html: the essence of the site! The page is organized into the four major groups of plants. Each of those groups then has its own table that will be filled with plant images, names, and facts. This is a rough outline of what the site will contain, but eventually it will have more of a gallery feel. For now, it has teh bare bones info and structure.
