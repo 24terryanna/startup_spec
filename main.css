@@ -37,3 +37,36 @@ header h1 {
   margin: 20px auto;
   padding: 20px;
 }
+/* Image Scroll Bar */
+.image-scrollbar {
+  display: flex;
+  overflow-x: auto;
+  padding: 20px 0;
+}
+
+.image-scrollbar img {
+  width: 200px;
+  height: 150px;
+  object-fit: cover;
+  margin-right: 10px;
+  border: 3px solid #2F4F4F; /* Dark green border around images */
+  border-radius: 5px;
+}
+
+.image-scrollbar img:last-child {
+  margin-right: 0;
+}
+
+/* Custom scrollbar */
+.image-scrollbar::-webkit-scrollbar {
+  height: 10px;
+}
+
+.image-scrollbar::-webkit-scrollbar-thumb {
+  background-color: #228B22; /* Forest green scrollbar */
+  border-radius: 10px;
+}
+
+.image-scrollbar::-webkit-scrollbar-track {
+  background-color: #FAF3E0; /* Cream track for the scrollbar */
+}
