@@ -1,0 +1,50 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #FAF3E0; /* Cream background */
+    color: #2F4F4F; /* Dark forest green text */
+  }
+  
+  /* Navigation Menu Bar */
+  nav {
+    background-color: #0b70389c; /* Forest green background */
+    position: fixed; /* Fixed to the top */
+    width: 100%;
+    top: 0;
+    left: 0;
+    padding: 10px 0;
+    z-index: 1000; /* Ensure it's on top of other elements */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  nav menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+  }
+  
+  nav menu li {
+    margin: 0 15px;
+  }
+  
+  nav menu li a {
+    color: #FAF3E0; /* Cream text */
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease;
+  }
+  
+  nav menu li a:hover {
+    background-color: #2F4F4F; /* Dark green on hover */
+    border-radius: 5px;
+  }
+  
+  /* To offset body content below the fixed nav */
+  body {
+    padding-top: 60px; /* Adjust for the height of the fixed nav */
+  }
+  
