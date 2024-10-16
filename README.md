@@ -17,7 +17,7 @@ Although I’m living in Utah now, I’m an Oregonian at heart! The Pacific Nort
 + Web service – backend service to save plants user selects as “favorite” 
 + Authentication – initial input to create account and login
 
-## PNW Plant Pedia Update Notes: HTML Startup
+## HTML Startup Notes
 + index.html: included the website title, menu with links to each page, a welcome header, login/create option, and my name & git hub.
 + about.html: very similar to the "About" page for Simon, this page gives a brief rundown of what PNW Plant Pedia is and how someone can benefit from using it. Currently a rough draft, will get tweeked.
 + saved.html: this page is where users will be able to access the plants they "save" aka add to their favorites. The organization of this page is still to be determined, but it will likely be a list of links to the specific plant they found on the pedia page. I need to learn more about "saving" or starring things on HTML.
@@ -25,3 +25,6 @@ Although I’m living in Utah now, I’m an Oregonian at heart! The Pacific Nort
     + 3rd party service call: here, I will implement a third party service call to Wikipedia where users can find more information on PNW plants.
     + Websocket data placeholder. Eventually, this will show the most viewed (ie. clicked on) plants in the pedia by users.
     + Database data placeholder. This will display, retrieve, and manage plant information as requested by the user. Specficially, it will involve showing all the plant species, details, and images stored in the database and allow users to search for them. 
+
+## CSS Startup Notes:
++ 
