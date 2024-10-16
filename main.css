@@ -70,3 +70,12 @@ header h1 {
 .image-scrollbar::-webkit-scrollbar-track {
   background-color: #FAF3E0; /* Cream track for the scrollbar */
 }
+
+/* Footer */
+footer {
+  background-color: #2F4F4F; /* Dark green footer */
+  color: #FAF3E0;
+  text-align: center;
+  padding: 10px 0;
+  margin-top: 40px;
+}
