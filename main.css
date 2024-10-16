@@ -8,7 +8,7 @@ body {
 
 /* Navigation Menu Bar */
 nav {
-  background-color: #228B22; /* Forest green background */
+  background-color: #0b70389c; /* Forest green background */
   position: fixed; /* Fixed to the top */
   width: 100%;
   top: 0;
@@ -62,7 +62,7 @@ a:hover {
 
 /* Header */
 header {
-  background-color: #228B22; /* Forest green background */
+  background-color: #0b7039; /* Forest green background */
   color: #FAF3E0; /* Cream text */
   padding: 20px;
   text-align: center;
@@ -115,7 +115,7 @@ header h1 {
 
 /* Footer */
 footer {
-  background-color: #2F4F4F; /* Dark green footer */
+  background-color: #0b70389c; /* Dark green footer */
   color: #FAF3E0;
   text-align: center;
   padding: 10px 0;
