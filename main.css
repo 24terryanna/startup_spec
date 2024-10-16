@@ -26,3 +26,14 @@ header {
   text-align: center;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
+
+header h1 {
+  margin: 0;
+}
+
+/* Main Content */
+.container {
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 20px;
+}
