@@ -40,6 +40,7 @@
     </header>
 
     <main>
+      <h1>Welcome to PNW Plant Pedia!</h1>
       <!-- <img alt="douglas fir" src="https://site.oregonforests.org/sites/default/files/styles/wide/public/2023-11/dougfir.jpg?itok=8SlAjdm6" width="220"/>-->
       <!-- img scrollbar-->
       <div class="image-scrollbar">
@@ -55,20 +56,26 @@
         <img src="images/PXL_20240723_223025890.jpg" alt="Plant Image 10">
         <!-- Add more images here -->
       </div>
-      
-      <form method="get" action="pedia.html">
-      
-        <div>
-          <span>@</span>
-          <input type="text" placeholder="your@email.com" />
+      <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-4">
+                <form method="get" action="pedia.html" class="mt-5">
+                    <div class="input-group mb-3">
+                        <span class="input-group-text">@</span>
+                        <input type="text" class="form-control" placeholder="your@email.com" />
+                    </div>
+                    <div class="input-group mb-3">
+                        <span class="input-group-text">🔒</span>
+                        <input type="password" class="form-control" placeholder="password" />
+                    </div>
+                    <div class="d-flex justify-content-between">
+                        <button type="submit" class="btn btn-primary">Login</button>
+                        <button type="submit" class="btn btn-secondary">Create</button>
+                    </div>
+                </form>
+            </div>
         </div>
-        <div>
-          <span>🔒</span>
-          <input type="password" placeholder="password" />
-        </div>
-        <button type="submit">Login</button>
-        <button type="submit">Create</button>
-      </form>
+    </div>
     </main>
 
     <footer>
