@@ -8,7 +8,7 @@ body {
 
 /* Navigation Menu Bar */
 nav {
-  background-color: #0b70389c; /* Forest green background */
+  background-color: #0b7038ab; /* Forest green background */
   position: fixed; /* Fixed to the top */
   width: 100%;
   top: 0;
@@ -87,12 +87,11 @@ header h1 {
 }
 
 .image-scrollbar img {
-  width: 200px;
-  height: 150px;
+  width: 1000px;
+  height: 375px;
   object-fit: cover;
   margin-right: 10px;
-  border: 3px solid #2F4F4F; /* Dark green border around images */
-  border-radius: 5px;
+  border: 6px solid #2F4F4F; /* Dark green border around images */
 }
 
 .image-scrollbar img:last-child {
@@ -110,7 +109,7 @@ header h1 {
 }
 
 .image-scrollbar::-webkit-scrollbar-track {
-  background-color: #FAF3E0; /* Cream track for the scrollbar */
+  background-color: #fbf2db; /* Cream track for the scrollbar */
 }
 
 /* Footer */
