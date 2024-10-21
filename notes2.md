@@ -1,11 +1,19 @@
 MIDTERM QUESTIONS 
-- In the following code, what does the link element do? 
+- In the following code, what does the link element do?
+    A. define relationship between current document & external resource (ex stylesheet)
+        - href = url of linked source
 
 - In the following code,  what does a div tag do? 
+    A. used to group & organize content: container for other elements
 
 - In the following code, what is the difference between the #title and .grid selector? 
+    - #title = ID Selector: ID unique within mage, higher specificity (override classes), apply to unique element
+        - targets id="title" element
+    - .grid = class selector: . selects element by class attribute, used on multiple elements throughout page, lower specificity, more flexible & reusable
 
 - In the following code, what is the difference between padding and margin? 
+    - padding = space inside element between content & border; inc size of element (background & border)
+    - margin = space outside element (border and surrounding); create space between without affecting size (external spacing)
 
 - Given this HTML and this CSS how will the images be displayed using flex? 
 
