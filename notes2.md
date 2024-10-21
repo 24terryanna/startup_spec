@@ -16,26 +16,75 @@ MIDTERM QUESTIONS
     - margin = space outside element (border and surrounding); create space between without affecting size (external spacing)
 
 - Given this HTML and this CSS how will the images be displayed using flex? 
+    - apply flexbox layout to container w/ images
+    - html file has div class with image-container
+    - flexbox container in css (flex-direction, justify-content, align-items control display)
 
 - What does the following padding CSS do? 
+    - padding = adds space inside element, inc size (unless box-sizing: border-box is used)
+    - padding: 20x adds to all four sides (vs padding-top, -right, -bottom, -left)
+    padding: 10px 20px = 1st value is top/bottom, 2nd is left/right
 
 - What does the following code using arrow syntax function declaration do? 
+    - arrow functions are fast way to write functions
+    - lexical "this" binding -> inherit this from surrounding scope
+    - don't have arguments, super, or new.target
+    - can't be used as constructors with new
+    - best used for callbacks, event handlers, and when "this" to behave predicatbly
 
 - What does the following code using map with an array output? 
+ - map() = iterate over array & apply function to each elements -> crate new array with results
+    - original array is unchanged
+    - cleaner than for loop
+    - paramteres: currentValue = element being processed in the array
+    - index = = current element processing
+    - array = array map() is called on
 
 - What does the following code output using getElementByID and addEventListener? 
+    - getElementByID: selects HTML element by its unqiue id (manipulate/access properties)
+    - addEventListener: attach event handler to element, allows faster response to user interactions 
 
 - What does the following line of Javascript do using a # selector? 
+    - # used to target elements by id when selecting them with methods like querySelector()
+    - essential to CSS and JS for styling and manipulating elements uniquely identified by id attributes
 
 - Which of the following are true? (mark all that are true about the DOM) 
+    - DOM = Document Object Model = interface for web docs
+        - reps structure of doc as tree of objects, allowing scripts (JS) to manipulate content, structure & style
+        - Nodes: element (rep html elements like div & p), text (contain text content w/in elements), attribute (rep attributes of HTML, id and class), comment (rep comments in html)
+        - access: document.getElementByClassName
 
 - By default, the HTML span element has a default CSS display property value of:  
+    A. inline
 
 - How would you use CSS to change all the div elements to have a background color of red? 
+    - CSS rule: 
+    div {
+        background-color: red;
+    }
+    - setup: 
+    <div style="background-color: red;">This div has a red background.</div>
+
 
 - How would you display an image with a hyperlink in HTML? 
+    <a href="URL_of_the_link" target="_blank">
+        <img src="URL_of_the_image" alt="Description of the image">
+    </a>
 
 - In the CSS box model, what is the ordering of the box layers starting at the inside and working out? 
++---------------------+
+|       Margin        |  <-- 4. Margin
+| +-----------------+ |
+| |      Border     | |  <-- 3. Border
+| | +-------------+ | |
+| | |   Padding   | | |  <-- 2. Padding
+| | | +---------+ | | |
+| | | | Content | | | |  <-- 1. Content
+| | | +---------+ | | |
+| | +-------------+ | |
+| +-----------------+ |
++---------------------+
+
 
 - Given the following HTML, what CSS would you use to set the text "trouble" to green and leave the "double" text unaffected? 
 
@@ -74,7 +123,3 @@ MIDTERM QUESTIONS
 - Port 443, 80, 22 is reserved for which protocol? 
 
 - What will the following code using Promises output when executed? 
-
- 
-
- 
