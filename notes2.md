@@ -87,39 +87,148 @@ MIDTERM QUESTIONS
 
 
 - Given the following HTML, what CSS would you use to set the text "trouble" to green and leave the "double" text unaffected? 
+    - wrap trouble in <span> element and apply CSS to that specific <span>
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change Text Color</title>
+    <style>
+        .green-text {
+            color: green; /* Sets the text color to green */
+        }
+    </style>
+</head>
+<body>
+    <p>
+        <span class="green-text">trouble</span> double
+    </p>
 
 - What will the following code output when executed using a for loop and console.log? 
+    - iterates over specificed range of values and logs each value to the console during each iteration
 
 - How would you use JavaScript to select an element with the id of “byu” and change the text color of that element to green? 
+    - Use document.getElementById() to select the element by its id.
+    - Change the text color by setting the style.color property to "green".
+    <body>
+    <p id="byu">This is some text that will change color.</p>
+
+    <script>
+        // Select the element with the id "byu"
+        const element = document.getElementById("byu");
+        
+        // Change the text color to green
+        element.style.color = "green";
+    </script>
+</body>
 
 - What is the opening HTML tag for a paragraph, ordered list, unordered list, second level heading, first level heading, third level heading? 
+    1. Paragraph: <p>
+    2. Ordered list: <ol>
+    3. Unordered list: <ul>
+    4. Second level heading: <h2>
+    5. First level heading: <h1>
+    6. Third level heading: <h3>
 
 - How do you declare the document type to be html? 
+    - use <!DOCTYPE html> at beginning of HTML document
 
 - What is valid javascript syntax for if, else, for, while, switch statements? 
+    if (condition) {
+        // Code to execute if condition is true
+    } else {
+        // Code to execute if condition is false
+    }
+
+    for (initialization; condition; increment) {
+    // Code to be executed
+    }
+
+    while (condition) {
+    // Code to be executed
+    }
+    switch (expression) {
+    case value1:
+        // Code to execute if expression === value1
+        break;
+    case value2:
+        // Code to execute if expression === value2
+        break;
+    default:
+        // Code to execute if no cases match
+    }
 
 - What is the correct syntax for creating a javascript object? 
+    - let objectName = new Object();
+        objectName.key1 = value1;
+    - let objectName = {key1: value1, key2: value}
 
 - Is it possible to add new properties to javascript objects? 
+    - Yes. JS objects are dynamic (add, modify, delete properties at any time)
 
 - If you want to include JavaScript on an HTML page, which tag do you use? 
+    - <script> placed under <head> or <body> in HTML doc
 
 - Given the following HTML, what JavaScript could you use to set the text "animal" to "crow" and leave the "fish" text unaffected? 
+    - wrap animal in html element like <span> or <p> & use JS to target specific element to modify
+    <body>
+    <p>animal and fish</p>
+    <!-- Wrap "animal" in a span -->
+    <p><span id="animal">animal</span> and fish</p>
+    <script>
+        // Select the element with the id "animal"
+        let animalElement = document.getElementById("animal");
+
+        // Change the text content of the selected element to "crow"
+        animalElement.textContent = "crow";
+    </script>
+    </body>
 
 - Which of the following correctly describes JSON? 
+    - lightweight data format used for storing and exchanging. Easy to read and write, and for machines to parse and generate.
+        - text based // data structure key-value pairs // widely used
 
 - What does the console command chmod, pwd, cd, ls, vim, nano, mkdir, mv, rm, man, ssh, ps, wget, sudo  do? 
+    - chmod = change mode: changes permission of file or directory
+    - pwd = print working directory: displays current working directory
+    - cd = change directory
+    - ls = list: lists files and directories in current directory
+    - vim = text editor: opens vim text editor for editing files
+    - nano = text editor: opens the nano text editor, simpler text editor than vim
+    - mkdir = make directory: creates new directory
+    - mv = move: moves or renames files or directories
+    - rm = remove: deletes files or directories
+    - man = manual: displys the manual for a command
+    - ssh = secure shell: connects to a remote mahcine via SSH
+    - ps = process status: displays info about active processes
+    - wget = web get: downloads files from the web
+    - sudo = superuuser do: runs commands with superuser (root) privileges
 
 - Which of the following console command creates a remote shell session? 
+    - ssh creates a remote shell session
 
 - Which of the following is true when the -la parameter is specified for the ls console command? 
+    - will list all files & directories (including hidden ones) in the current directory in a detailed format.
 
 - Which of the following is true for the domain name banana.fruit.bozo.click, which is the top level domain, which is a subdomain, which is a root domain? 
+    1. Top level domain (TLD): last segment of domain name = .click
+    2. Root domain: referred to as base domain = bozo.click
+    3. subdomain: part of larger domain = banana.fruit is subdomain of root domain bozo.click. 
+        - fruit = subdomain of bozo.click -> banana.fruit further subdomain
 
 - Is a web certificate is necessary to use HTTPS. 
+    - Yes. specifically ssl/tls certificate
 
 - Can a DNS A record can point to an IP address or another A record. 
+    - DNS can only point to IP address, not another A record. 
+    - A record cannot point to anotehr A record, but CNAME record can be used to alias one domain to another
 
 - Port 443, 80, 22 is reserved for which protocol? 
+    - Port 80: HTTP
+    - Port 443: HTTPS
+    - Port 22: SSH
 
 - What will the following code using Promises output when executed? 
+    1. Create a Promise: Define your asynchronous operation using the Promise constructor.
+    2. Handle Resolution: Use .then() to handle successful resolutions.
+    3. Handle Rejection: Use .catch() to handle any errors.
+    4. Use async/await: Alternatively, wrap your Promise handling in an async function and use await to get the result, with try/catch to handle errors.
