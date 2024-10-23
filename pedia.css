@@ -8,7 +8,7 @@ body {
   
   /* Navigation Menu Bar */
   nav {
-    background-color: #0b70389c; /* Forest green background */
+    background-color: #0b7038ab; /* Forest green background */
     position: fixed; /* Fixed to the top */
     width: 100%;
     top: 0;
@@ -45,6 +45,32 @@ body {
   
   /* To offset body content below the fixed nav */
   body {
-    padding-top: 60px; /* Adjust for the height of the fixed nav */
-  }
+    padding-top: 60px; /* Adjust for height fixed nav */
+    margin: 20px;
+}
+
+/* gallery items */
+.gallery-item {
+    background-color: #f0f0f0; /*cubes */
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+}
+
+.gallery-item:hover {
+    transform: scale(1.05);
+}
+
+/* image styling */
+.gallery-item img {
+    width: 100px; /* Adjust size */
+    height: 100px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+  
+
+  
   
