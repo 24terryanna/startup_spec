@@ -3,13 +3,13 @@ body {
   margin: 0;
   padding: 0;
   background-color: #FAF3E0; /* Cream background */
-  color: #2F4F4F; /* Dark forest green text */
+  color: #2F4F4F; /*forest green text */
 }
 
 /* Navigation Menu Bar */
 nav {
   background-color: #0b7038ab; /* Forest green background */
-  position: fixed; /* Fixed to the top */
+  position: fixed; /* stays at top */
   width: 100%;
   top: 0;
   left: 0;
@@ -43,13 +43,12 @@ nav menu li a:hover {
   border-radius: 5px;
 }
 
-/* To offset body content below the fixed nav */
 body {
   padding-top: 60px; /* Adjust for the height of the fixed nav */
 }
 
 h1, h2, h3, h4, h5, h6 {
-  color: #2F4F4F; /* Dark forest green for headings */
+  color: #2F4F4F; /* forest green headings */
 }
 a {
   color: #2F4F4F;
@@ -60,7 +59,6 @@ a:hover {
   text-decoration: underline;
 }
 
-/* Header */
 header {
   background-color: #0b7039; /* Forest green background */
   color: #FAF3E0; /* Cream text */
@@ -91,7 +89,7 @@ header h1 {
   height: 375px;
   object-fit: cover;
   margin-right: 10px;
-  border: 6px solid #2F4F4F; /* Dark green border around images */
+  border: 6px solid #2F4F4F; /* green border on images */
 }
 
 .image-scrollbar img:last-child {
@@ -104,15 +102,14 @@ header h1 {
 }
 
 .image-scrollbar::-webkit-scrollbar-thumb {
-  background-color: #005107; /* Forest green scrollbar */
+  background-color: #005107; /* green scrollbar */
   border-radius: 10px;
 }
 
 .image-scrollbar::-webkit-scrollbar-track {
-  background-color: #b7dcb2; /* Cream track for the scrollbar */
+  background-color: #b7dcb2; /* track for the scrollbar */
 }
 
-/* Footer */
 footer {
   background-color: #0b70389c; /* Dark green footer */
   color: #FAF3E0;
