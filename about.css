@@ -48,3 +48,11 @@ body {
     padding-top: 60px; /* Adjust for the height of the fixed nav */
   }
   
+  footer {
+    background-color: #0b70389c; /* Dark green footer */
+    color: #FAF3E0;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 40px;
+  }
+  
