@@ -1,10 +1,10 @@
 body {
-    font-family: 'Arial', sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #FAF3E0; /* Cream background */
-    color: #2F4F4F; /* Dark forest green text */
-  }
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff; /* Cream background */
+  color: #2F4F4F; /*forest green text */
+}
   
   /* Navigation Menu Bar */
   nav {
@@ -70,7 +70,13 @@ body {
     margin-bottom: 10px;
 }
 
-  
+footer {
+  background-color: #0b70389c; /* Dark green footer */
+  color: #FAF3E0;
+  text-align: center;
+  padding: 10px 0;
+  margin-top: 40px;
+}
 
   
   
