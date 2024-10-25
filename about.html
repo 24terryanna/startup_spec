@@ -25,22 +25,39 @@
           <li><a href="about.html">About</a></li>
         </menu>
       </nav>
-
-      <hr />
     </header>
 
     <style>
-      .content {
-        margin-left:10px;
-        margin-right: 10px;
+      .custom-image {
+          width: 100%;
+          height: 200px;
+          object-fit: cover;
       }
-    </style>
+      .text-row {
+          text-align: center;
+          margin: 20px 0;
+      }
+  </style>
+</head>
 
-    <div class="content">
+<body>
+<div class="container">
+  <!-- First row of images -->
+  <div class="row">
+      <div class="col-md-4">
+          <img src="https://via.placeholder.com/300" alt="Image 1" class="custom-image">
+      </div>
+      <div class="col-md-4">
+          <img src="https://via.placeholder.com/300" alt="Image 2" class="custom-image">
+      </div>
+      <div class="col-md-4">
+          <img src="https://via.placeholder.com/300" alt="Image 3" class="custom-image">
+      </div>
+  </div>
 
-      <main>
-        <img src="images/oswest_sunset_evevergreens.jpg" alt="Wilson River Trail" width="400">
-
+  <!-- Row of text -->
+  <div class="row text-row">
+      <div class="col-md-12">
         <p>
           Pacific Northwest (PNW) Plant Pedia is a space for all those interested in learning more about the primary producers of the 
           intricate and complex ecosystem throughout our lush area of the planet!
@@ -56,6 +73,35 @@
           <div>Your fellow tree huggers,</div>
           <div>- PNW Plant Pedia</div>
         </div>
+      </div>
+  </div>
+
+  <!-- bottom row of images -->
+  <div class="row">
+      <div class="col-md-4">
+          <img src="https://via.placeholder.com/300" alt="Image 4" class="custom-image">
+      </div>
+      <div class="col-md-4">
+          <img src="https://via.placeholder.com/300" alt="Image 5" class="custom-image">
+      </div>
+      <div class="col-md-4">
+          <img src="https://via.placeholder.com/300" alt="Image 6" class="custom-image">
+      </div>
+  </div>
+</div>
+    <style>
+      .content {
+        margin-left:10px;
+        margin-right: 10px;
+      }
+    </style>
+
+    <div class="content">
+
+      <main>
+        <img src="images/oswest_sunset_evevergreens.jpg" alt="Wilson River Trail" width="400">
+
+        
       </main>
     </div>
 
@@ -65,5 +111,5 @@
       <br />
       <a href="https://github.com/24terryanna/startup_spec">GitHub</a>
     </footer>
-  </body>
+</body>
 </html>
