@@ -3,7 +3,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: #FAF3E0; /* Cream background */
-    color: #2F4F4F; /* Dark forest green text */
+    color: #43744e; /* Dark forest green text */
   }
   
   /* Navigation Menu Bar */
@@ -45,8 +45,9 @@ body {
   
   /* To offset body content below the fixed nav */
   body {
-    padding-top: 60px; /* Adjust for the height of the fixed nav */
-  }
+    padding-top: 60px; /* Adjust for height fixed nav */
+    margin: 20px;
+}
   
   footer {
     background-color: #0b70389c; /* Dark green footer */
