@@ -67,8 +67,13 @@ pnwplantpedia notes
 - saved.html: this page is where users will be able to access the plants they "save" aka add to their favorites. The organization of this page is still to be determined, but it will likely be a list of links to the specific plant they found on the pedia page. I need to learn more about "saving" or starring things on HTML.
 - pedia.html: the essence of the site! The page is organized into the four major groups of plants. Each of those groups then has its own table that will be filled with plant images, names, and facts. This is a rough outline of what the site will contain, but eventually it will have more of a gallery feel. For now, it has teh bare bones info and structure.
 
-+ CSS
-- main.css
-- saved.css
-- about.css
-- pedia.css
+React: JavaScript library for interaction with user
+- public files
+- src files
+- .gitignore file for nodes that shouldn't be changed
+
+API & Service Calls (see rapidapi.com for API examples)
+- search for public APIs and mess around
+- no authentication, yes https yes coors
+- grab content from several APIs to make site
+- 
