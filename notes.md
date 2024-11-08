@@ -76,7 +76,14 @@ React: JavaScript library for interaction with user
 Vite: toolchain to easily bundle code for converting to React
 - debug support
 - easily support JSX, TypeScript, & CSS flavors
+- prefer .jsx for files with JSX (better editing tools)
 *convert to React using vite
+- index.html -> main.jsx (ReactDOM.createRoot) -> app.jsx (function App() {return...})
+NPM commands:
+- npm run dev = bundling code to temp directory that Vite HTTP server loads from 
+- npm run build = deploy production environment
+  - executes build script in package.json, invokes Vite
+  - Vite then injects proper JS & outputs everything in dist subdirectory (dist)
 
 
 API & Service Calls (see rapidapi.com for API examples)
