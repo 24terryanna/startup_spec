@@ -24,7 +24,13 @@ document.addEventListener("DOMContentLoaded", () => {
 
     //close popup
     closeButton.addEventListener("click", () => {
-
+        popup.classList.add("hidden");
     });
 
+    //close popup on clicking outside
+    window.addEventListener("click", (event) => {
+        if (event.target === popup) {
+            popup.classList.add("hidden");
+        }
+    });
 });
