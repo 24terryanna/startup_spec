@@ -9,6 +9,13 @@ document.addEventListener("DOMContentLoaded", () => {
     const triggers = document.querySelectorAll(".popup-trigger");
 
     console.log("Found triggers:", triggers.length);
+    console.log("Popup Name:", popupName);
+    console.log("Popup Description:", popupDescription);
+    console.log("Popup Image:", popupImage);
+
+    if (!popupName || !popupDescription || !popupImage) {
+        console.error("One or more required elements are missing in the popup!");
+    }
 
     //Show popup
     triggers.forEach(trigger => {
