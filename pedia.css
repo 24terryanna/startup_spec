@@ -140,6 +140,7 @@ body {
   border-radius: 8px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   width: 250px; /* Set a fixed width for consistent spacing */
+  /* transition: transform 0.2s ease-in-out */
 }
 
 .gallery-item:hover {
