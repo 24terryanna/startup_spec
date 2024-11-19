@@ -32,13 +32,69 @@
 
     </header>
 <hr />
-    <!-- <main>
-        <section> 
-            <p><i>//Database data placeholder. This is where users can search for and filter plant species.</i></p>
-            <p><i>//3rd party service call placeholder to wikipedia.org</i></p>
-            <p><i>//Websocket data placeholder for most viewed plants by all web users</i></p>
-        </section>
-    </main> -->
+
+<div class="container">
+    <h2>Gymnosperms</h2>
+    <div class="gallery-item">
+        <p>Douglas Fir</p>
+        <a href="#popup-douglas-fir">Facts</a>
+    </div>
+
+    <div class="gallery-item">
+        <p>Sitka Spruce</p>
+        <a href="#popup-sitka-spruce">Facts</a>
+    </div>
+
+    <div class="gallery-item">
+        <p>Western Red Cedar</p>
+        <a href="#popup-western-red-cedar">Facts</a>
+    </div>
+
+    <div class="gallery-item">
+        <p>Western Hemlock</p>
+        <a href="#popup-western-hemlock">Facts</a>
+    </div>
+
+    <!-- Popup for Douglas Fir -->
+    <div id="popup-douglas-fir" class="popup">
+        <div class="popup-content">
+            <a href="#" class="close-button">&times;</a>
+            <img src="images/douglas_fir.jpg" alt="Douglas Fir">
+            <h3>Douglas Fir</h3>
+            <p>Dougie facts :)</p>
+        </div>
+    </div>
+
+    <!-- Popup for Sitka Spruce -->
+    <div id="popup-sitka-spruce" class="popup">
+        <div class="popup-content">
+            <a href="#" class="close-button">&times;</a>
+            <img src="images/sitka_spruce.jpg" alt="Sitka Spruce">
+            <h3>Sitka Spruce</h3>
+            <p>Large, fast-growing conifer found along the coasts of Alaska and the Pacific Northwest.</p>
+        </div>
+    </div>
+
+    <!-- Popup for Western Red Cedar -->
+    <div id="popup-western-red-cedar" class="popup">
+        <div class="popup-content">
+            <a href="#" class="close-button">&times;</a>
+            <img src="images/western_red_img" alt="Western Red Cedar">
+            <h3>Western Red Cedar</h3>
+            <p>facts!</p>
+        </div>
+    </div>
+
+    <!-- Popup for Western Hemlock -->
+    <div id="popup-western-hemlock" class="popup">
+        <div class="popup-content">
+            <a href="#" class="close-button">&times;</a>
+            <img src="images/western_hemlock.jpg" alt="Western Hemlock">
+            <h3>Western Hemlock</h3>
+            <p>facts!</p>
+        </div>
+    </div>
+</div>
 
     <div class="container my-5">
         <!-- Gymnosperms Table -->
@@ -47,15 +103,8 @@
             <div class="row">
                 <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
                     <div class="gallery-item">
-                        <!--<img src="path-to-image1.jpg" class="img-fluid" alt="Plant 1"> -->
-                        <p class="text-center">Douglas Fir</p>
-                        <button
-                            class="popup-trigger"
-                            data-name="Douglas Fir"
-                            data-image="images/douglas_fir.jpg"
-                            data-discription="Dougie facts :)">
-                            Details
-                        </button>
+                        <img src="images/douglas_fir.jpg" alt="Douglas Fir">
+                        <p>Douglas Fir</p>
                     </div>
                 </div>
                 <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
@@ -285,7 +334,7 @@
         <a href="https://github.com/24terryanna/startup_spec">GitHub</a>
       </footer>
 
-    <div id="popup" class="popup hidden">
+    <!-- <div id="popup" class="popup hidden">
         <div class="popup-content">
             <span class="close-button">&times;</span>
             <img id="popup-image" src="" alt="Plant Image">
@@ -294,7 +343,7 @@
         </div>
     </div>
     
-    <script src="pedia.js"></script>
+    <script src="pedia.js"></script> -->
 
   </body>
 </html>
