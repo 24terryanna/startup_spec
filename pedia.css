@@ -87,30 +87,29 @@ body {
   background: white;
   padding: 20px;
   border-radius: 8px;
-  max-width: 500px;
+  max-width: 400px;
   text-align: center;
   position: relative;
 }
 
 .popup-content img {
-  max-width: 100%;
-  height: auto;
-  margin-bottom: 20px;
+  max-width: 50%;
+  height: 50%;
+  margin-bottom: 10px;
 }
 
 .close-button {
   position: absolute;
-  top: 10px;
+  top: 0px;
   right: 10px;
   text-decoration: none;
   color: black;
-  font-size: 20px;
+  font-size: 30px;
 }
 
 .close-button:hover {
   color: red;
 }
-
 
 .container {
   max-width: 1200px;
