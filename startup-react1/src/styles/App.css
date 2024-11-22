@@ -1,0 +1,119 @@
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #FAF3E0; /* Cream background */
+  color: #2F4F4F; /*forest green text */
+}
+
+/* Navigation Menu Bar */
+nav {
+  background-color: #0b7038ab; /* Forest green background */
+  position: fixed; /* stays at top */
+  width: 100%;
+  top: 0;
+  left: 0;
+  padding: 10px 0;
+  z-index: 1000; /* Ensure it's on top of other elements */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+nav menu {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+nav menu li {
+  margin: 0 15px;
+}
+
+nav menu li a {
+  color: #FAF3E0; /* Cream text */
+  text-decoration: none;
+  font-size: 18px;
+  padding: 10px 20px;
+  transition: background-color 0.3s ease;
+}
+
+nav menu li a:hover {
+  background-color: #2F4F4F; /* Dark green on hover */
+  border-radius: 5px;
+}
+
+body {
+  padding-top: 60px; /* Adjust for the height of the fixed nav */
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #2F4F4F; /* forest green headings */
+}
+a {
+  color: #2F4F4F;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+header {
+  background-color: #0b7039; /* Forest green background */
+  color: #FAF3E0; /* Cream text */
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+  margin: 0;
+}
+
+/* Main Content */
+.container {
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 20px;
+}
+/* Image Scroll Bar */
+.image-scrollbar {
+  display: flex;
+  overflow-x: auto;
+  padding: 20px 0;
+}
+
+.image-scrollbar img {
+  width: 1000px;
+  height: 375px;
+  object-fit: cover;
+  margin-right: 10px;
+  border: 6px solid #2F4F4F; /* green border on images */
+}
+
+.image-scrollbar img:last-child {
+  margin-right: 0;
+}
+
+/* Custom scrollbar */
+.image-scrollbar::-webkit-scrollbar {
+  height: 10px;
+}
+
+.image-scrollbar::-webkit-scrollbar-thumb {
+  background-color: #005107; /* green scrollbar */
+  border-radius: 10px;
+}
+
+.image-scrollbar::-webkit-scrollbar-track {
+  background-color: #b7dcb2; /* track for the scrollbar */
+}
+
+footer {
+  background-color: #0b70389c; /* Dark green footer */
+  color: #FAF3E0;
+  text-align: center;
+  padding: 10px 0;
+  margin-top: 40px;
+}
