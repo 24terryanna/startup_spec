@@ -4,7 +4,7 @@ import Home from "./home/home.jsx";
 import About from "./about/about.jsx";
 import Pedia from "./pedia/pedia.jsx";
 import Saved from "./saved/saved.jsx";
-import "./App.css";
+import "./styles/App.css";
 
 function App() {
   return (
@@ -19,7 +19,7 @@ function App() {
           </ul>
         </nav>
       </header>
-      
+
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />

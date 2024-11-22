@@ -1,0 +1,1 @@
+import "../pedia/pedia.css";
