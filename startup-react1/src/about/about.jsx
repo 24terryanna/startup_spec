@@ -2,7 +2,7 @@ import React from "react";
 import "../styles/about.css";
 
 function About() {
-  // Image data for galleries
+  // Images
   const topImages = [
     { src: "images/oswest_sunset_evevergreens.jpg", alt: "Image 1" },
     { src: "images/bandon_brush.jpg", alt: "Image 2" },
@@ -21,10 +21,10 @@ function About() {
         <h1 className="text-center">Meet the Plants of the PNW!</h1>
         <nav>
           <menu>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="pedia.html">Pedia</a></li>
-            <li><a href="saved.html">Saved</a></li>
-            <li><a href="about.html">About</a></li>
+            <li><Link to="/">Home</Link></li>
+            <li><Link to="/pedia">Pedia</Link></li>
+            <li><Link to="/saved">Saved</Link></li>
+            <li><Link to="/about">About</Link></li>
           </menu>
         </nav>
       </header>
