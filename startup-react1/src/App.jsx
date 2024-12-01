@@ -3,6 +3,7 @@ import Saved from './saved/saved';
 import Home from './home/home';
 import Pedia from './pedia/pedia';
 import About from './about/about';
+import './App.css'
 
 function App() {
   return (
