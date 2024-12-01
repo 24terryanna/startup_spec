@@ -33,15 +33,14 @@ const plantsData = [
   },
 
   {
-    category: "Gymnosperms",
+    category: "Ferns",
     plants: [
-      { name: "Douglas Fir", id: "douglas-fir", image: "images/Douglas-fir_britannica.jpg", scientificName: "Pseudotsuga menziesii", credit: "Britannica" },
-      { name: "Sitka Spruce", id: "sitka-spruce", image: "images/sitka_spruce_wiki.JPG", scientificName: "Picea sitchensis", credit: "Wikipedia" },
-      { name: "Western Red Cedar", id: "western-red-cedar", image: "images/my_west_redcedar.JPG", scientificName: "Thuja plicata", credit: "Anna Terry" },
-      { name: "Western Hemlock", id: "western-hemlock", image: "images/Western_Hemlock_OR_encyclo.jpg", scientificName: "Tsuga heterophylla", credit: "Oregon Encyclopedia" },
+      { name: "Sword Fern", id: "sword-fern", image: "images/my_sword_fern.JPG", scientificName: "Polystichum munitum", credit: "Anna Terry" },
+      { name: "Lady Fern", id: "lady-fern", image: "images/my_lady_fern.jpg", scientificName: "Athyrium filix-femina", credit: "Anna Terry" },
+      { name: "Bracken Fern", id: "bracken-fern", image: "images/hairy_bracken_fern_graysenwaves.jpeg", scientificName: "Pteridium aquilinum", credit: "graysenwaves via iNaturalist" },
+      { name: "Licorice Fern", id: "licorice-fern", image: "images/licorice_fern_wiki.jpg", scientificName: "Polypodium glycyrrhiza", credit: "Wikipedia" },
     ],
   },
-  // Add similar objects for Mosses & Liverworts, Angiosperms, and Ferns
 ];
 
 const Pedia = () => {
