@@ -1,59 +1,65 @@
 body {
-    font-family: 'Arial', sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #FAF3E0; /* Cream background */
-    color: #43744e; /* Dark forest green text */
-  }
-  
-  /* Navigation Menu Bar */
-  nav {
-    background-color: #0b7038ab; /* Forest green background */
-    position: fixed; /* Fixed to the top */
-    width: 100%;
-    top: 0;
-    left: 0;
-    padding: 10px 0;
-    z-index: 1000; /* Ensure it's on top of other elements */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  }
-  
-  nav menu {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-  }
-  
-  nav menu li {
-    margin: 0 15px;
-  }
-  
-  nav menu li a {
-    color: #FAF3E0; /* Cream text */
-    text-decoration: none;
-    font-size: 18px;
-    padding: 10px 20px;
-    transition: background-color 0.3s ease;
-  }
-  
-  nav menu li a:hover {
-    background-color: #2F4F4F; /* Dark green on hover */
-    border-radius: 5px;
-  }
-  
-  /* To offset body content below the fixed nav */
-  body {
-    padding-top: 60px; /* Adjust for height fixed nav */
-    margin: 20px;
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #FAF3E0; /* Cream background */
+  color: #43744e; /* Dark forest green text */
 }
-  
-  footer {
-    background-color: #0b70389c; /* Dark green footer */
-    color: #FAF3E0;
-    text-align: center;
-    padding: 10px 0;
-    margin-top: 40px;
-  }
-  
+
+/* Navigation Menu Bar */
+nav {
+  background-color: #0b7038ab; /* Forest green background */
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  padding: 10px 0;
+  z-index: 1000;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+nav menu {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+nav menu li {
+  margin: 0 15px;
+}
+
+nav menu li a {
+  color: #FAF3E0; /* Cream text */
+  text-decoration: none;
+  font-size: 18px;
+  padding: 10px 20px;
+  transition: background-color 0.3s ease;
+}
+
+nav menu li a:hover {
+  background-color: #2F4F4F; /* Dark green on hover */
+  border-radius: 5px;
+}
+
+/* Custom image styling */
+.custom-image {
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+}
+
+/* Text row styling */
+.text-row {
+  text-align: center;
+  margin: 20px 0;
+}
+
+footer {
+  background-color: #0b70389c; /* Dark green footer */
+  color: #FAF3E0;
+  text-align: center;
+  padding: 10px 0;
+  margin-top: 40px;
+}
