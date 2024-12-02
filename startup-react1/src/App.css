@@ -1,21 +1,19 @@
-/* General Global Styles */
 body {
   font-family: 'Arial', sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #fdfdfd; /* Cream background */
-  color: #2F4F4F; /* Forest green text */
+  background-color: #fdfdfd; 
+  color: #2F4F4F; 
 }
 
-/* Navigation Menu Bar */
 nav {
-  background-color: #0b7038ab; /* Forest green background */
-  position: fixed; /* Fixed to the top */
+  background-color: #0b7038ab; 
+  position: fixed; 
   width: 100%;
   top: 0;
   left: 0;
   padding: 10px 0;
-  z-index: 1000; /* Ensure it's on top of other elements */
+  z-index: 1000; 
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
@@ -32,7 +30,7 @@ nav menu li {
 }
 
 nav menu li a {
-  color: #FAF3E0; /* Cream text */
+  color: #FAF3E0; 
   text-decoration: none;
   font-size: 18px;
   padding: 10px 20px;
@@ -40,16 +38,14 @@ nav menu li a {
 }
 
 nav menu li a:hover {
-  background-color: #2F4F4F; /* Dark green on hover */
+  background-color: #2F4F4F; 
   border-radius: 5px;
 }
 
-/* Offset content below the fixed nav */
 body {
-  padding-top: 60px; /* Adjust for the height of the fixed nav */
+  padding-top: 60px; 
 }
 
-/* Header Styles */
 header {
   text-align: center;
   margin-bottom: 20px;
@@ -57,13 +53,12 @@ header {
 
 header h1 {
   font-size: 2rem;
-  color: #2F4F4F;
+  color: #FAF3E0;
   margin: 0;
 }
 
-/* Footer Styles */
 footer {
-  background-color: #0b70389c; /* Dark green footer */
+  background-color: #0b70389c; 
   color: #FAF3E0;
   text-align: center;
   padding: 10px 0;
