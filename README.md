@@ -26,7 +26,7 @@ Although I’m living in Utah now, I’m an Oregonian at heart! The Pacific Nort
     + Websocket data placeholder. Eventually, this will show the most viewed (ie. clicked on) plants in the pedia by users.
     + Database data placeholder. This will display, retrieve, and manage plant information as requested by the user. Specficially, it will involve showing all the plant species, details, and images stored in the database and allow users to search for them. 
 
-## CSS Startup Notes:
+## CSS Startup Notes
 + index.html: using bootstrap, I created a title for the home page, organized correct links to pages for the menu bar, created a class of images for the image scrollbar, and created another container and path to saved for the login information. Added a footer.
 + main.css: created navigation menu bar, coloring and margins for the body, headers, and footer. Created a container for the main content from index.html and an image scrollbar. These standarad styles were applied to my other three CSS files to keep the minimal forest green and white text combination consistent.
 + pedia.html: The same menu bar and footer created in index.html were copied to this file for consistency. I created a class for the four tables of plant families that I will be focusing on. Each table (Gymnosperms, Angiosperms, Mosses & Liverworst, and Ferns) are defined in a class section. Each table has a row of four plant species with the names centered and displayed. Eventually, when the user selects a plant box in the table, it will react by displaying a pop up of information about the plant. This information is still being organized and is not yet displayed.
