@@ -1,153 +1,102 @@
-body {
-    font-family: 'Arial', sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #ffffff; /* Cream background */
-    color: #2F4F4F; /*forest green text */
-  }
-    
-    /* Navigation Menu Bar */
-    nav {
-      background-color: #0b7038ab; /* Forest green background */
-      position: fixed; /* Fixed to the top */
-      width: 100%;
-      top: 0;
-      left: 0;
-      padding: 10px 0;
-      z-index: 1000; /* Ensure it's on top of other elements */
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    }
-    
-    nav menu {
-      list-style-type: none;
-      margin: 0;
-      padding: 0;
-      display: flex;
-      justify-content: center;
-    }
-    
-    nav menu li {
-      margin: 0 15px;
-    }
-    
-    nav menu li a {
-      color: #FAF3E0; /* Cream text */
-      text-decoration: none;
-      font-size: 18px;
-      padding: 10px 20px;
-      transition: background-color 0.3s ease;
-    }
-    
-    nav menu li a:hover {
-      background-color: #2F4F4F; /* Dark green on hover */
-      border-radius: 5px;
-    }
-    
-    /* To offset body content below the fixed nav */
-    body {
-      padding-top: 60px; /* Adjust for height fixed nav */
-      margin: 20px;
-  }
-  
-  .plant-category {
-    margin-bottom: 40px;
-  }
-  
-  .plant-category h2 {
-    text-align: center;
-    font-size: 24px;
-    color: #2F4F4F; /* Forest green */
-    margin-bottom: 20px;
-  }
-  
-  .plant-grid {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 30px;
-  }
-  
-  .popup {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.5);
-    display: none;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .popup:target {
-    display: flex;
-  }
-  
-  .popup-content {
-    background: white;
-    padding: 20px;
-    border-radius: 8px;
-    max-width: 400px;
-    text-align: center;
-    position: relative;
-  }
-  
-  .popup-content img {
-    max-width: 50%;
-    height: 50%;
+.plant-category {
+  margin-bottom: 40px;
+}
+
+.plant-category h2 {
+  text-align: center;
+  font-size: 24px;
+  color: #2F4F4F; /* Forest green */
+  margin-bottom: 20px;
+}
+
+.plant-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.popup:target {
+  display: flex;
+}
+
+.popup-content {
+  background: rgba(96, 148, 113, 0.884);
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 400px;
+  text-align: center;
+  position: relative;
+}
+
+.popup-content img {
+  max-width: 50%;
+  height: 50%;
+  margin-bottom: 10px;
+}
+
+.close-button {
+  position: absolute;
+  top: 0px;
+  right: 10px;
+  text-decoration: none;
+  color: black;
+  font-size: 30px;
+}
+
+.close-button:hover {
+  color: red;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap; /* Allow items to wrap */
+  justify-content: center; /* Center items horizontally */
+  gap: 30px; /* Space between items */
+}
+
+.gallery-item {
+  text-align: center;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  width: 250px; /* Set a fixed width for consistent spacing */
+  /* transition: transform 0.2s ease-in-out */
+}
+
+.gallery-item:hover {
+    transform: scale(1.05);
+}
+
+/* image styling */
+.gallery-item img {
+    width: 100px; /* Adjust size */
+    height: 100px;
+    object-fit: cover;
     margin-bottom: 10px;
-  }
-  
-  .close-button {
-    position: absolute;
-    top: 0px;
-    right: 10px;
-    text-decoration: none;
-    color: black;
-    font-size: 30px;
-  }
-  
-  .close-button:hover {
-    color: red;
-  }
-  
-  .container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-    display: flex;
-    flex-wrap: wrap; /* Allow items to wrap */
-    justify-content: center; /* Center items horizontally */
-    gap: 30px; /* Space between items */
-  }
-  
-  .gallery-item {
-    text-align: center;
-    padding: 20px;
-    background-color: #f9f9f9;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    width: 250px; /* Set a fixed width for consistent spacing */
-    /* transition: transform 0.2s ease-in-out */
-  }
-  
-  .gallery-item:hover {
-      transform: scale(1.05);
-  }
-  
-  /* image styling */
-  .gallery-item img {
-      width: 100px; /* Adjust size */
-      height: 100px;
-      object-fit: cover;
-      margin-bottom: 10px;
-  }
-  
-  footer {
-    background-color: #0b70389c; /* Dark green footer */
-    color: #FAF3E0;
-    text-align: center;
-    padding: 10px 0;
-    margin-top: 40px;
-  }  
+}
+
+footer {
+  background-color: #0b70389c; /* Dark green footer */
+  color: #FAF3E0;
+  text-align: center;
+  padding: 10px 0;
+  margin-top: 40px;
+}  
