@@ -5,7 +5,7 @@
 .plant-category h2 {
   text-align: center;
   font-size: 24px;
-  color: #2F4F4F; /* Forest green */
+  color: #287942; /* Forest green */
   margin-bottom: 20px;
 }
 
@@ -52,7 +52,7 @@
   top: 0px;
   right: 10px;
   text-decoration: none;
-  color: black;
+  color:  #287942;
   font-size: 30px;
 }
 
@@ -65,9 +65,9 @@
   margin: 0 auto;
   padding: 20px;
   display: flex;
-  flex-wrap: wrap; /* Allow items to wrap */
+  flex-wrap: wrap; 
   justify-content: center; 
-  gap: 30px; /* Space between items */
+  gap: 30px; 
 }
 
 .gallery-item {
@@ -84,9 +84,8 @@
     transform: scale(1.05);
 }
 
-/* image styling */
 .gallery-item img {
-    width: 100px; /* Adjust size */
+    width: 100px; 
     height: 100px;
     object-fit: cover;
     margin-bottom: 10px;
