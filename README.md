@@ -35,3 +35,16 @@ Although I’m living in Utah now, I’m an Oregonian at heart! The Pacific Nort
 + saved.css: The code for the menu bar and footer were copied to this file from main.css for consistency. Basic body padding and margin specifications were added. The appearance of this page it complete, but the content is still being developed. More will come as JavaScript and React are implemented.
 + about.html: The same menu bar and footer created in index.html were copied to this file for consistency. Added a style sextion to organize and size the images. I created a container that includes a class row with three images. Following that division is a text class with a description of the site's purpose. Following the text block is another image block, equivalent to the top images. 
 + about.css: The code for the menu bar and footer were copied to this file from main.css for consistency. Added a body element to center the text and add padding. 
+
+## React Startup Notes
++ public directory
+    + transferred images directory directly from startup html to startup react.
++ src directory
+    + about directory: includes about.jsx (React converted about.html) and about.css (same as previous about.css in CSS startup, but general formating was removed.)
+    + home directory: includes home.jsx (React converted index.html) and home.css (same as previous main.css in CSS startup, but general formating was removed.)
+    + login directory: includes about.jsx. Currently unused, just placeholder for next startup.
+    + pedia directory: includes pedia.jsx (React converted pedia.html) and pedia.css (same as previous about.css in CSS startup, but general formating was removed.) Pedia.jsx includes components for the popups and grid organization. Each plant has an array of unique information (common name, scientific name, image, photo credit.)
+    + saved directory: includes saved.jsx (React converted saved.html) and saved.css (same as previous saved.css in CSS startup, but general formating was removed.)
+    + App.css: includes general styling for the header, footer, body, and navigation bar. This is applied to every page.
+    + App.jsx: imported my four pages and created routes to each directory in App function.
++ index.jsx: imported React, created Root, and rendered App
