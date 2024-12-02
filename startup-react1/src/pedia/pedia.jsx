@@ -86,9 +86,7 @@ const Pedia = () => {
       {popupData && (
         <div className="popup" onClick={closePopup}>
           <div className="popup-content" onClick={(e) => e.stopPropagation()}>
-            <button className="close-button" onClick={closePopup}>
-              &times;
-            </button>
+            <button className="close-button" onClick={closePopup}> &times; </button>
             <img src={popupData.image} alt={popupData.name} />
             <h3>{popupData.name}</h3>
             <p><i>{popupData.scientificName}</i></p>
