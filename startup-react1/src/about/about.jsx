@@ -7,7 +7,7 @@ export function About(props) {
 
   // We only want this to render the first time the component is created and so we provide an empty dependency list.
   React.useEffect(() => {
-    fetch('https://quote.cs260.click')
+    fetch('https://stoic.tekloon.net/stoic-quote')
       .then((response) => response.json())
       .then((data) => {
         setQuote(data.quote);
@@ -70,6 +70,12 @@ export function About(props) {
             </div>
           </div>
         </div>
+        
+      {/*quote box */}
+        <div className='quote-box bg-light text-dark'>
+          <p className='quote'>{quote}</p>
+          <p className='author'>{quoteAuthor}</p>
+        </div>
 
         {/* Bottom row of images */}
         <div className="row">
@@ -86,10 +92,7 @@ export function About(props) {
             <p><i>Photos by Anna Terry</i></p>
           </div>
         </div>
-        <div className='quote-box bg-light text-dark'>
-          <p className='quote'>{quote}</p>
-          <p className='author'>{quoteAuthor}</p>
-        </div>
+        
       </div>
 
       <footer className="text-center py-3">
