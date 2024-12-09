@@ -96,23 +96,3 @@ body {
     padding: 10px 0;
     margin-top: 40px;
   }
-
-  .quote-box {
-  margin-top: 1em;
-  padding: 0.5em;
-  border-radius: 5px;
-}
-
-.quote {
-  font-style: italic;
-}
-
-.author {
-  font-weight: bold;
-  text-align: right;
-}
-
-.author::before {
-  content: " - ";
-} 
-  
