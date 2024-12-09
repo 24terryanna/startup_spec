@@ -1,7 +1,17 @@
-import React from 'react';
+import React, { useState, useEffect} from 'react';
 import "./home.css";
 
 const Home = () => {
+  const [weather, setWeather] = useState(null);
+
+  useEffect(() => {
+    const apiKey = 'api_key_here' //REPLACE WITH WEATHER API
+    fetch(`https://api.openweathermap.org/data/2.5/weather?q=Seattle&appid=${apiKey}`)
+      .then(response => response.json())
+      .then(data => setWeather(data))
+      .catch(error => console.error('Error fetching weather data:', error));
+  }, []);
+  
     return (
       <div className="content">
         <header>
