@@ -4,9 +4,14 @@ import Saved from './saved/saved';
 import Home from './home/home';
 import Pedia from './pedia/pedia';
 import About from './about/about';
+//import { AuthState } from './login/authState';
 import './App.css'
 
 function App() {
+  // const [userName, setUserName] = React.useState(localStorage.getItem('userName') || '');
+  // const currentAuthState = userName ? AuthState.Authenticated : AuthState.Unauthenticated;
+  // const [authState, setAuthState] = React.useState(currentAuthState);
+
   return (
     <Router>
       <Routes>
