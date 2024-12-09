@@ -29,3 +29,13 @@ useEffect(() => {
     .then(response => response.json())
     .then(data => setPlants(data)); // Set the data to your state
 }, []);
+
+useEffect(() => {
+  const apiKey = 'YOUR_API_KEY';
+  const url = `https://api.openweathermap.org/data/2.5/weather?q=Seattle&appid=${apiKey}`;
+  
+  fetch(url)
+    .then(response => response.json())
+    .then(data => setWeather(data));
+}, []);
+
