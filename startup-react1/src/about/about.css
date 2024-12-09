@@ -1,14 +1,14 @@
-body {
+/* body {
   font-family: 'Arial', sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #FAF3E0; /* Cream background */
-  color: #43744e; /* Dark forest green text */
+  background-color: #FAF3E0; 
+  color: #43744e; 
 }
 
-/* Navigation Menu Bar */
+
 nav {
-  background-color: #0b7038ab; /* Forest green background */
+  background-color: #0b7038ab;
   position: fixed;
   width: 100%;
   top: 0;
@@ -31,7 +31,7 @@ nav menu li {
 }
 
 nav menu li a {
-  color: #FAF3E0; /* Cream text */
+  color: #FAF3E0;
   text-decoration: none;
   font-size: 18px;
   padding: 10px 20px;
@@ -39,9 +39,9 @@ nav menu li a {
 }
 
 nav menu li a:hover {
-  background-color: #2F4F4F; /* Dark green on hover */
+  background-color: #2F4F4F;
   border-radius: 5px;
-}
+} */
 
 /* Custom image styling */
 .custom-image {
@@ -56,10 +56,31 @@ nav menu li a:hover {
   margin: 20px 0;
 }
 
-footer {
-  background-color: #0b70389c; /* Dark green footer */
+
+.quote-box {
+  margin-top: 1em;
+  padding: 0.5em;
+  border-radius: 5px;
+}
+
+.quote {
+  font-style: italic;
+}
+
+.author {
+  font-weight: bold;
+  text-align: right;
+}
+
+.author::before {
+  content: " - ";
+} 
+  
+
+/* footer {
+  background-color: #0b70389c;
   color: #FAF3E0;
   text-align: center;
   padding: 10px 0;
   margin-top: 40px;
-}
+} */
