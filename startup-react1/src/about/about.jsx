@@ -7,8 +7,6 @@ export function About(props) {
 
   // We only want this to render the first time the component is created and so we provide an empty dependency list.
   React.useEffect(() => {
-    const random = Math.floor(Math.random() * 1000);
-    
     fetch('https://quote.cs260.click')
       .then((response) => response.json())
       .then((data) => {
@@ -87,6 +85,10 @@ export function About(props) {
           <div>
             <p><i>Photos by Anna Terry</i></p>
           </div>
+        </div>
+        <div className='quote-box bg-light text-dark'>
+          <p className='quote'>{quote}</p>
+          <p className='author'>{quoteAuthor}</p>
         </div>
       </div>
 
