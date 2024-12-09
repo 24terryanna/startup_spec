@@ -68,13 +68,13 @@ export function About(props) {
               <div>Your fellow tree huggers,</div>
               <div>PNW Plant Pedia</div>
             </div>
+          
+          {/*quote box */}
+          <div className='quote-box bg-light text-dark'>
+            <p className='quote'>{quote}</p>
+            <p className='author'>{quoteAuthor}</p>
           </div>
-        </div>
-        
-      {/*quote box */}
-        <div className='quote-box bg-light text-dark'>
-          <p className='quote'>{quote}</p>
-          <p className='author'>{quoteAuthor}</p>
+          </div>
         </div>
 
         {/* Bottom row of images */}
