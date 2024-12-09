@@ -97,15 +97,22 @@ body {
     margin-top: 40px;
   }
 
-  .weather-section {
-    margin-top: 2rem;
-    padding: 1rem;
-    background-color: #f0f8ff;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  }
-  
-  .weather-section p {
-    margin: 0.5rem 0;
-  }
+  .quote-box {
+  margin-top: 1em;
+  padding: 0.5em;
+  border-radius: 5px;
+}
+
+.quote {
+  font-style: italic;
+}
+
+.author {
+  font-weight: bold;
+  text-align: right;
+}
+
+.author::before {
+  content: " - ";
+} 
   
