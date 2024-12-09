@@ -1,7 +1,24 @@
 import React from "react";
 import "./about.css";
 
-const About = () => {
+export function About(props) {
+  const [quote, setQuote] = React.useState('Loading...');
+  const [quoteAuthor, setQuoteAuthor] = React.useState('unknown');
+
+  // We only want this to render the first time the component is created and so we provide an empty dependency list.
+  React.useEffect(() => {
+    const random = Math.floor(Math.random() * 1000);
+    
+    fetch('https://quote.cs260.click')
+      .then((response) => response.json())
+      .then((data) => {
+        setQuote(data.quote);
+        setQuoteAuthor(data.author);
+      })
+      .catch();
+  }, []);
+
+// const About = () => {
   return (
     <div className="about-content">
       <header>
