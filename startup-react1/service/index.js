@@ -16,7 +16,7 @@ app.use(express.static('public'));
 var apiRouter = express.Router();
 app.use(`/api`, apiRouter);
 
-// CreateAuth a new user
+////// CreateAuth a new user
 apiRouter.post('/auth/create', async (req, res) => {
   const user = users[req.body.email];
   if (user) {
