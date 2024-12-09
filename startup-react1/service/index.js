@@ -2,7 +2,7 @@ const express = require('express');
 const uuid = require('uuid');
 const app = express();
 
-// The scores and users are saved in memory and disappear whenever the service is restarted.
+// The users are saved in memory and disappear whenever the service is restarted.
 let users = {};
 
 // The service port. In production the front-end code is statically hosted by the service on the same port.
