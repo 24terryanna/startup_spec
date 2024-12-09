@@ -2,7 +2,6 @@ const express = require('express');
 const uuid = require('uuid');
 const app = express();
 
-
 // The service port. In production the front-end code is statically hosted by the service on the same port.
 const port = process.argv.length > 2 ? process.argv[2] : 3000;
 
@@ -15,3 +14,12 @@ app.use(express.static('public'));
 // Router for service endpoints
 var apiRouter = express.Router();
 app.use(`/api`, apiRouter);
+
+apiRouter.get('/plants', (req, res) => {
+  const plants = [
+    { id: uuid.v4(), name: 'Douglas Fir', type: 'Tree', location: 'PNW' },
+    { id: uuid.v4(), name: 'Sword Fern', type: 'Fern', location: 'PNW' },
+    { id: uuid.v4(), name: 'Western Hemlock', type: 'Tree', location: 'PNW' },
+  ];
+  res.json(plants);
+});
