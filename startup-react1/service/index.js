@@ -23,3 +23,9 @@ apiRouter.get('/plants', (req, res) => {
   ];
   res.json(plants);
 });
+
+useEffect(() => {
+  fetch('/api/plants')
+    .then(response => response.json())
+    .then(data => setPlants(data)); // Set the data to your state
+}, []);
