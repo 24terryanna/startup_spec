@@ -96,4 +96,16 @@ body {
     padding: 10px 0;
     margin-top: 40px;
   }
+
+  .weather-section {
+    margin-top: 2rem;
+    padding: 1rem;
+    background-color: #f0f8ff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .weather-section p {
+    margin: 0.5rem 0;
+  }
   
