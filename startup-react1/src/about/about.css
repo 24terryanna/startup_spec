@@ -21,7 +21,7 @@
 
 .author {
   font-weight: bold;
-  text-align: right;
+  text-align: center;
 }
 
 .author::before {
