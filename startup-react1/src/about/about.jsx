@@ -10,8 +10,8 @@ export function About(props) {
     fetch('/api/quote')
       .then((response) => response.json())
       .then((data) => {
-        setQuote(data.quote);
-        setQuoteAuthor(data.author);
+        setQuote(data.data.quote);
+        setQuoteAuthor(data.data.author);
       })
       .catch((error) => {
         console.error('Error fetching the quote:', error);
