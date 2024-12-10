@@ -18,6 +18,7 @@ export function About(props) {
         setQuote('Error loading quote.');
         setQuoteAuthor('');
     });
+  }, []);
 
 
 // const About = () => {
@@ -106,7 +107,7 @@ export function About(props) {
         <a href="https://github.com/24terryanna/startup_spec">GitHub</a>
       </footer>
     </div>
-  );
+    );
 };
 
 export default About;
