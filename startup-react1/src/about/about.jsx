@@ -5,20 +5,31 @@ export function About(props) {
   const [quote, setQuote] = React.useState('Loading...');
   const [quoteAuthor, setQuoteAuthor] = React.useState('unknown');
 
-  // We only want this to render the first time the component is created and so we provide an empty dependency list.
+  
   React.useEffect(() => {
-    fetch('/api/quote')
-      .then((response) => response.json())
-      .then((data) => {
-        setQuote(data.data.quote);
-        setQuoteAuthor(data.data.author);
-      })
-      .catch((error) => {
-        console.error('Error fetching the quote:', error);
-        setQuote('Error loading quote.');
-        setQuoteAuthor('');
-    });
+      fetch('https://stoic.tekloon.net/stoic-quote')
+        .then((response) => response.json())
+        .then((data) => {
+          setQuote(data.quote);
+          setQuoteAuthor(data.author);
+        })
+      .catch ();
   }, []);
+  
+  // We only want this to render the first time the component is created and so we provide an empty dependency list.
+  // React.useEffect(() => {
+  //   fetch('/api/quote')
+  //     .then((response) => response.json())
+  //     .then((data) => {
+  //       setQuote(data.data.quote);
+  //       setQuoteAuthor(data.data.author);
+  //     })
+  //     .catch((error) => {
+  //       console.error('Error fetching the quote:', error);
+  //       setQuote('Error loading quote.');
+  //       setQuoteAuthor('');
+  //   });
+  // }, []);
 
 
 // const About = () => {
