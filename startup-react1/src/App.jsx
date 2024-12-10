@@ -22,20 +22,17 @@ function App() {
         <Route path="/pedia" element={<Pedia />} />
         <Route path="/saved" element={<Saved />} />
         <Route path="/about" element={<About />} />
-        {/* <Route
-            path='/'
-            element={
-              <Login
-                userName={userName}
-                authState={authState}
-                onAuthChange={(userName, authState) => {
-                  setAuthState(authState);
-                  setUserName(userName);
-                }}
-              />
-            }
-            exact
-        /> */}
+        <Route path="/login" element={
+          <Login
+            userName={userName}
+            authState={authState}
+            onAuthChange={(userName, authState) => {
+              setAuthState(authState);
+              setUserName(userName);
+            }}
+          />
+        }
+      />
       <Route path='*' element={<NotFound />} />
       </Routes>
     </Router>
