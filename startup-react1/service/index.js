@@ -1,6 +1,22 @@
 const express = require('express');
+const fetch = require('node-fetch');
 const uuid = require('uuid');
 const app = express();
+
+app.get('/api/quote', async (req, res) => {
+  try {
+    const response = await fetch('https://stoic.tekloon.net/stoic-quote');
+    const data = await response.json();
+    res.json(data);
+  } catch (error) {
+    console.error('Error fetching the quote:', error);
+    res.status(500).json({ quote: 'Error loading quote.', author: ''});
+  }
+});
+
+app.listen(3000, () => {
+  console.log('Server running on http://localhost:3000');
+});
 
 // The users are saved in memory and disappear whenever the service is restarted.
 let users = {};
