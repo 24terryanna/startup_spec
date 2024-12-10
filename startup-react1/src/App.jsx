@@ -22,7 +22,7 @@ function App() {
         <Route path="/pedia" element={<Pedia />} />
         <Route path="/saved" element={<Saved />} />
         <Route path="/about" element={<About />} />
-        <Route
+        {/* <Route
             path='/'
             element={
               <Login
@@ -35,10 +35,15 @@ function App() {
               />
             }
             exact
-        />
+        /> */}
+      <Route path='*' element={<NotFound />} />
       </Routes>
     </Router>
   );
+}
+
+function NotFound() {
+  return <main className='container-fluid bg-secondary text-center'>404: Return to sender. Address unknown.</main>;
 }
 
 export default App;
