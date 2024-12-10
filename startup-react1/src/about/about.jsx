@@ -8,12 +8,22 @@ export function About(props) {
   // We only want this to render the first time the component is created and so we provide an empty dependency list.
   React.useEffect(() => {
     fetch('https://stoic.tekloon.net/stoic-quote')
-      .then((response) => response.json())
+      .then((response) => {
+        if (!response.ok) {
+          throw new Error('Network response was not ok');
+        }
+        return response.json();
+      })
+      // .then((response) => response.json())
       .then((data) => {
         setQuote(data.quote);
         setQuoteAuthor(data.author);
       })
-      .catch();
+      .catch((error) => {
+        console.error('Error fetching the quote:', error);
+        setQuote('error loading quote.');
+        setQuoteAuthor('');
+      });
   }, []);
 
 // const About = () => {
