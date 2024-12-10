@@ -3,27 +3,26 @@ const fetch = require('node-fetch');
 const uuid = require('uuid');
 const app = express();
 
-app.use(express.json());
-
-app.use(express.static('public'));
+let users = {};
 
 const port = process.argv.length > 2 ? process.argv[2] : 4000;
 
-app.get('/api/quote', async (req, res) => {
-  try {
-    const response = await fetch('https://stoic.tekloon.net/stoic-quote');
-    const data = await response.json();
-    res.json(data);
-  } catch (error) {
-    console.error('Error fetching the quote:', error);
-    res.status(500).json({ quote: 'Error loading quote.', author: ''});
-  }
-});
-
-let users = {};
+app.use(express.json());
+app.use(express.static('public'));
 
 var apiRouter = express.Router();
 app.use(`/api`, apiRouter);
+
+// app.get('/api/quote', async (req, res) => {
+//   try {
+//     const response = await fetch('https://stoic.tekloon.net/stoic-quote');
+//     const data = await response.json();
+//     res.json(data);
+//   } catch (error) {
+//     console.error('Error fetching the quote:', error);
+//     res.status(500).json({ quote: 'Error loading quote.', author: ''});
+//   }
+// });
 
 // CreateAuth a new user
 apiRouter.post('/auth/create', async (req, res) => {
@@ -65,5 +64,5 @@ app.use((_req, res) => {
 });
 
 app.listen(port, () => {
-  console.log(`Server running on http://localhost:${port}`);
+  console.log(`Listening on port ${port}`);
 });
