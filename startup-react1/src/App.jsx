@@ -17,7 +17,12 @@ function App() {
   return (
     <Router>
       <Routes>
-      <Route
+        <Route path="/" element={<Home />} />
+        <Route path="/home" element={<Home />} />
+        <Route path="/pedia" element={<Pedia />} />
+        <Route path="/saved" element={<Saved />} />
+        <Route path="/about" element={<About />} />
+        <Route
             path='/'
             element={
               <Login
@@ -31,11 +36,6 @@ function App() {
             }
             exact
         />
-        <Route path="/" element={<Home />} />
-        <Route path="/home" element={<Home />} />
-        <Route path="/pedia" element={<Pedia />} />
-        <Route path="/saved" element={<Saved />} />
-        <Route path="/about" element={<About />} />
       </Routes>
     </Router>
   );
