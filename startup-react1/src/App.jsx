@@ -6,6 +6,7 @@ import Home from './home/home';
 import Pedia from './pedia/pedia';
 import About from './about/about';
 import { AuthState } from './login/authState';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css'
 
 function App() {
