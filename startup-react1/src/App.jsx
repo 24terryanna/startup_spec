@@ -1,10 +1,10 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import { Login } from './login/login'
-import { Saved } from './saved/saved';
-import { Home } from './home/home';
-import { Pedia } from './pedia/pedia';
-import { About } from './about/about';
+import Login from './login/login'
+import Saved from './saved/saved';
+import Home from './home/home';
+import Pedia from './pedia/pedia';
+import About from './about/about';
 import { AuthState } from './login/authState';
 import './App.css'
 
