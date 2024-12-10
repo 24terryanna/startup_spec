@@ -3,6 +3,12 @@ const fetch = require('node-fetch');
 const uuid = require('uuid');
 const app = express();
 
+app.use(express.json());
+
+app.use(express.static('public'));
+
+const port = process.argv.length > 2 ? process.argv[2] : 4000;
+
 app.get('/api/quote', async (req, res) => {
   try {
     const response = await fetch('https://stoic.tekloon.net/stoic-quote');
@@ -14,23 +20,8 @@ app.get('/api/quote', async (req, res) => {
   }
 });
 
-app.listen(3000, () => {
-  console.log('Server running on http://localhost:3000');
-});
-
-// The users are saved in memory and disappear whenever the service is restarted.
 let users = {};
 
-// The service port. In production the front-end code is statically hosted by the service on the same port.
-const port = process.argv.length > 2 ? process.argv[2] : 3000;
-
-// JSON body parsing using built-in middleware
-app.use(express.json());
-
-// Serve up the front-end static content hosting
-app.use(express.static('public'));
-
-// Router for service endpoints
 var apiRouter = express.Router();
 app.use(`/api`, apiRouter);
 
@@ -42,7 +33,6 @@ apiRouter.post('/auth/create', async (req, res) => {
   } else {
     const user = { email: req.body.email, password: req.body.password, token: uuid.v4() };
     users[user.email] = user;
-
     res.send({ token: user.token });
   }
 });
@@ -75,5 +65,5 @@ app.use((_req, res) => {
 });
 
 app.listen(port, () => {
-  console.log(`Listening on port ${port}`);
+  console.log(`Server running on http://localhost:${port}`);
 });
