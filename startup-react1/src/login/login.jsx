@@ -1,10 +1,31 @@
-import React from 'react';
-
+import React, { useState } from 'react';
 import { Unauthenticated } from './unauthenticated';
 import { Authenticated } from './authenticated';
 import { AuthState } from './authState';
 
 export function Login({ userName, authState, onAuthChange }) {
+  const [error, setError] = useState('');
+
+  const handleLogin = async (username, password) => {
+    try {
+      const response = await fetch('/api/login', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ username, password }),
+      });
+
+      if (response.ok) {
+        const data = await response.json();
+        onAuthChange(data.userName, AuthState.Authenticated);
+        setError('');
+      } else {
+        setError('Invalid login credentials');
+      }
+    } catch (err) {
+      setError('An error occurred. Please try again.');
+    }
+  };
+  
   return (
     <main className='container-fluid bg-secondary text-center'>
       <div>
