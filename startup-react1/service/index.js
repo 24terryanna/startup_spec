@@ -1,5 +1,4 @@
 const express = require('express');
-const fetch = require('node-fetch');
 const uuid = require('uuid');
 const app = express();
 
