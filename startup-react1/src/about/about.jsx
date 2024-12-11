@@ -4,10 +4,11 @@ import "./about.css";
 export function About(props) {
   const [quote, setQuote] = React.useState('Loading...');
   const [quoteAuthor, setQuoteAuthor] = React.useState('unknown');
-
   
+  // We only want this to render the first time the component is created and so we provide an empty dependency list.
   React.useEffect(() => {
-      fetch('https://stoic.tekloon.net/stoic-quote')
+      // fetch('https://stoic.tekloon.net/stoic-quote')
+      fetch('https://quote.cs260.click')
         .then((response) => response.json())
         .then((data) => {
           setQuote(data.quote);
@@ -16,7 +17,6 @@ export function About(props) {
       .catch ();
   }, []);
   
-  // We only want this to render the first time the component is created and so we provide an empty dependency list.
   // React.useEffect(() => {
   //   fetch('/api/quote')
   //     .then((response) => response.json())
