@@ -48,3 +48,9 @@ Although I’m living in Utah now, I’m an Oregonian at heart! The Pacific Nort
     + App.css: includes general styling for the header, footer, body, and navigation bar. This is applied to every page.
     + App.jsx: imported my four pages and created routes to each directory in App function.
 + index.jsx: imported React, created Root, and rendered App
+
+## Service Startup Notes
++ created service directory for backend communication. It contains index.js, my backend file, and two package files for functionality. index.js containes the API Router that points to the frontend. It also has code for user authentification when they login. 
++ about.jsx (prexisting file within src/about) is my frontend for the service call. It now contains a function that sets a random quote and React.useEffect to fetch a quote from a quote.cs260.click. The fetch component is the frontend accessing the url.
++ about.css was updated with formatting for the quote text and box.
++ App.jsx was updated to import AuthState for authentification and a route to login. I also added a function NotFound to help with error catching.
