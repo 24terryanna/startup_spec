@@ -31,7 +31,7 @@ function App() {
         <Route path="/pedia" element={<Pedia />} />
         <Route path="/saved" element={<Saved />} />
         <Route path="/about" element={<About />} />
-        <Route path="/login" element={
+        {/* <Route path="/login" element={
           <Login
             userName={userName}
             authState={authState}
@@ -41,7 +41,7 @@ function App() {
             }}
           />
         }
-      />
+      /> */}
       <Route path='*' element={<NotFound />} />
       </Routes>
     </Router>
