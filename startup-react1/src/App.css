@@ -23,21 +23,22 @@ nav menu {
   padding: 0;
   display: flex;
   justify-content: center;
+  flex-direction: row !important;
 }
 
-nav menu li {
+/* nav menu li { */
+nav-item {
   margin: 0 15px;
-}
-
-nav menu li a {
+/* } */
+/* nav menu li a { */
   color: #f8f6f0; 
   text-decoration: none;
   font-size: 18px;
   padding: 10px 20px;
   transition: background-color 0.3s ease;
-}
+/* } */
 
-nav menu li a:hover {
+/* nav menu li a:hover { */
   background-color: #2F4F4F; 
   border-radius: 5px;
 }
