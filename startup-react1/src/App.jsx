@@ -17,7 +17,16 @@ function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/" element={<Login 
+            userName={userName}
+            authState={authState}
+            onAuthChange={(userName, authState) => {
+              setAuthState(authState);
+              setUserName(userName);
+            }}
+          />} 
+          exact
+        />
         <Route path="/home" element={<Home />} />
         <Route path="/pedia" element={<Pedia />} />
         <Route path="/saved" element={<Saved />} />
