@@ -8,7 +8,7 @@ export function Login({ userName, authState, onAuthChange }) {
   return (
     <main className='container-fluid bg-secondary text-center'>
       <div>
-        {authState !== AuthState.Unknown && <h1>Welcome to Simon</h1>}
+        {authState !== AuthState.Unknown && <h1>Welcome to PNW Plant Pedia</h1>}
         {authState === AuthState.Authenticated && (
           <Authenticated userName={userName} onLogout={() => onAuthChange(userName, AuthState.Unauthenticated)} />
         )}
@@ -24,6 +24,7 @@ export function Login({ userName, authState, onAuthChange }) {
     </main>
   );
 }
+export default Login;
 
 // import React, { useState } from 'react';
 // import { Unauthenticated } from './unauthenticated';
@@ -92,4 +93,3 @@ export function Login({ userName, authState, onAuthChange }) {
 //   );
 // }
 
-export default Login;
