@@ -1,8 +1,28 @@
 1. What is the default port for HTTP/HTTPS/SSH? 
+    + HTTP: port 80
+    + HTTPS: port 443
+    + SSH: port 22
 
 2. What does an HTTP status code in the range of 300/400/500 indicate?
+    + 300-399: Redirection
+        + client must take additional actions to complete request, often involving redirection to another URL.
+        + 301: move permantently
+        + 302: found (temporary redirect)
+        + 304: not modified (for caching purposes)
+    + 400-499: client errors
+        + client's request is invalid or cannot be processed
+        + 400: bad request
+        + 402: unauthorized
+        + 403: forbidden
+        + 404: not found
+    + 500-599: servcer errors
+        + server encountered an error & couldn't compelte request
+        + 500: internal server error
+        + 502: bad gateway
+        + 503: service unavailable
 
 3. What does the HTTP header content-type allow you to do?
+    + 
 
 4. What does a “Secure cookie”/”Http-only cookie”/”Same-site cookie” do? https://developer.mozilla.org/en-US/docs/Web/HTTP/Cookies
 
