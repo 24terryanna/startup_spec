@@ -1,0 +1,29 @@
+.custom-image {
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+}
+
+.text-row {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.quote-box {
+  margin-top: 1em;
+  padding: 0.5em;
+  border-radius: 5px;
+}
+
+.quote {
+  font-style: italic;
+}
+
+.author {
+  font-weight: bold;
+  text-align: center;
+}
+
+.author::before {
+  content: " - ";
+} 
