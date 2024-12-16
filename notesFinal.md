@@ -40,6 +40,17 @@
     
 
 4. What does a “Secure cookie”/”Http-only cookie”/”Same-site cookie” do? https://developer.mozilla.org/en-US/docs/Web/HTTP/Cookies
+    + Secure Cookie: only sent over HTTPS connections, ensuring secure transmission and interception prevention over secure connections (HTTP)
+        + purpose: protects cookie data from being transmitted over unencrypted channels, limiting risk of man-in-the-middle attacks
+        + often used for senstitive cookies like session tokens
+    + HttppOnly Cookie: cannot be accessed via JavaScript, making it immune to client-side scripts, like those in cross-site scripting attacks
+        + prevents attackers from stealing cookies via malicious script injected into browser
+    + SameSite Cookie: restricts hot its sent with cross-site requests, mitigating cross-site request forgery attacks
+        + strict: cookie only sent with requests originating from the same site
+        + lax: cookie sent with same-site requests and some cross-site requests (top-level navigation like clicking a link)
+        + none: cookie can be sent with all requests, but must have the secure attribute if value is used
+    + example of all used: Set-Cookie: sessionId=abc123; Secure; HttpOnly; SameSite=Strict
+        + only sent over HTTPS (Secure), can't be accessed via JS (HttpOnly), only included in requests from same site (SameSite=Strict) 
 
 5. Assuming the following Express middleware, what would be the console.log output for an HTTP GET request with a URL path of /api/document?
 
