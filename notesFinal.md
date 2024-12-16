@@ -22,7 +22,22 @@
         + 503: service unavailable
 
 3. What does the HTTP header content-type allow you to do?
-    + 
+    + allows client & server to specify the media type of resource being sent
+    + header is crucial for correctly interpreting the content of request or response
+    + use cases:
+        1. indicate format of the data
+            + text/html - content is HTML doc
+            + application/json - content is JSON data
+            + text/css - content is CSS stylesheet
+            + image/png - content is PNG image
+        2. Enable proper rendering or handling
+            + determines display content (render HTML, download a file)
+            + for API: helps client know how to parse the data (JSON)
+        3. Facilitate file uploads:
+            + specifies the type of data being sent in HTTP requests
+                + multipart/form-data - used for file uploads
+                + application/x-www-form-urlencoded - used for form submissions
+    
 
 4. What does a “Secure cookie”/”Http-only cookie”/”Same-site cookie” do? https://developer.mozilla.org/en-US/docs/Web/HTTP/Cookies
 
