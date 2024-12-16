@@ -139,15 +139,45 @@
     7. custom hooks: extract and reuse logic in fucntional components (JS functions that call other hooks internally & return values or functions for component use ) 
 
 16. What does the State Hook/Context Hook/Ref Hook/Effect Hook/Performance Hook do? https://react.dev/reference/react/hooks
+    + State hook: allows function components to manage state
+    + context hook: allows you to access values stored in React Context
+    + ref hooks: persist values across renders and directly reference DOM elements
+    + effect hook: handles side effects in functional components
+    + performance hook: optimize performance in React
 
 17. Given React Router code, select statements that are true.
 
 18. What does the package.json file do?
+    + key configuration file in Node.js and JS projects with npm. 
+        1. project metadata: contians info about project, helpful for development and sharing project
+        2. dependency management: where project's external libraries (dependencies) are listed
+            + dependencies: libraries/packages needed for the application to run in production
+            + devDependencies: libraries/tools only needed during development (testing libraries, building tools)
+        3. Scripts: define custom scripts that can be run (start, test, build, dev)
+        4. engines and compatability: used to specify version of Node.js or npm that project is compatible with
+        5. configuration for tools: allow you to specify configurations directly in package.json file (Babel)
 
 19. What does the fetch function do?
+    + used to make network requests to retrieve resources from server or API
+        + asynchronous: returns a promise, allowing you to handle result once request is completed
+        + supports promises: use .then() for handling the response or .catch() for handling errors
+        + built-in support for JSON: used to make requests for data in formats like JSON and easily parse JSON responses
+        + returns: promise that resolves response object representing the response to the request
 
 20. What does node.js do?
+    + runtime environmnet for Chrome that lets you run JS code outside of browser (on server)
 
 21. What does pm2 do?
+    + process manager for Node.js applications to keep them running in production environments with minimal downtime adn optimized performance
+        + start, stop, restart, and monitor application
+        + run app in background as daemon
 
 22. What does Vite do?
+    + build tool and development server designed to imporve modern web applications
+        + fast development server
+        + optimized production builds
+        + support modern JS
+        + hot module replacement (HMR) - update browser immediately after changes are made w/o full reload
+        + framework agnostic
+        + fast build times
+        + plugin ecosystem
